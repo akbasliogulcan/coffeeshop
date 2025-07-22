@@ -12,7 +12,6 @@
   list-style: none;
   text-transform: capitalize;
   transition: 0.2s linear;
-  font-family: "Roboto", sans-serif;
 }
 
 /* Root */
@@ -21,4 +20,161 @@
   --black-color: #13131a;
   --bg-color: #010103;
   --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: white;
+  font-family: "Roboto", serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+section {
+  padding: 2rem 7%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 1.7rem;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  scale: 1.1;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+}
+
+.heading span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+header {
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  border-bottom: var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .logo img {
+  height: 6rem;
+  border-radius: 50%;
+}
+
+header nav a {
+  color: white;
+  font-size: 1.6rem;
+  margin: 0 1rem;
+}
+
+header nav a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+header .icons i {
+  color: white;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+header .icons i:hover {
+  color: var(--main-color);
+}
+
+header .icons {
+  display: none;
+}
+
+/* Home */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(./assests/images/home.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.home .content {
+  max-width: 60rem;
+}
+
+.home .content h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.home .content p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  line-height: 1.8;
+  font-weight: lighter;
+  color: #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  header {
+    padding: 1.5rem 2rem;
+  }
+
+  header .icons {
+    display: block;
+  }
+
+  header nav {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    right: 3%;
+    top: 120%;
+    gap: 3rem;
+    background-color: var(--bg-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--main-color);
+    text-align: center;
+  }
+  header nav.active {
+    display: flex;
+  }
+
+  section {
+    padding: 2rem;
+  }
+  .home {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
+  .home content h3 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header .icons i {
+    font-size: 2rem;
+  }
 }
