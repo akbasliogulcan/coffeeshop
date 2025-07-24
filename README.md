@@ -3,6 +3,8 @@
 Welcome to the Coffee Shop Website project!  
 This is a simple and elegant landing page for a coffee shop, built using **HTML**, **CSS**, and a touch of **JavaScript** for interactivity.
 
+live ======>>> https://guileless-salmiakki-a79340.netlify.app/
+
 ## 🌐 Live Demo
 <img src="assests/images/bookstore.gif" width="800" height="800" />
 
