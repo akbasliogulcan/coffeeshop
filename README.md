@@ -4,7 +4,7 @@ Welcome to the Coffee Shop Website project!
 This is a simple and elegant landing page for a coffee shop, built using **HTML**, **CSS**, and a touch of **JavaScript** for interactivity.
 
 ## 🌐 Live Demo
-<img src="assets/images/bookstore.gif" width="800" />
+<img src="assests/images/bookstore.gif" width="800" height="800" />
 
 ---
 
@@ -28,4 +28,11 @@ This is a simple and elegant landing page for a coffee shop, built using **HTML*
 ---
 
 ## 📁 Project Structure
+coffee-shop/
+│
+├── index.html
+├── style.css
+├── script.js
+└── images/
+└── (all image assets)
 
